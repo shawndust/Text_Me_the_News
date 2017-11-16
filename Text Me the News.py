@@ -22,16 +22,16 @@ while True:
     from twilio.rest import Client
     import time
 
-    cellNum = "+13094531417"
+    cellNum = "+xxxx"
     # Your Account Sid and Auth Token from twilio.com/user/account
-    account_sid = "AC76aa1d8c1f355eeecb3e14f0fb55a74d"
-    auth_token = "2ded5722dcda4f03fb9fc9069742bb44"
+    account_sid = "xxxx"
+    auth_token = "xxxx"
     client = Client(account_sid, auth_token)
 
     message = client.messages.create(
             "%s" % (cellNum),
             body="%s" % (names),
-            from_="+13123133145")
+            from_="+xxxx")
     #    ,
     #        media_url="http://www.example.com/hearts.png")
 
